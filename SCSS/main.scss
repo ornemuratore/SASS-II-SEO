@@ -1,0 +1,33 @@
+@import "parrafos";
+@import "colours";
+
+
+$vista:mobile;
+.applySass{
+    background-color: rgb(248, 177, 224);
+    @if $vista == desktop {
+		@media only screen and (min-width:1024px){
+		h1{font-size:2em;}
+		h2{font-size:1em;}
+		}
+		}@else if $vista == mobile {
+			h1{font-size:20px;}
+			h2{font-size:18px;}
+			}@else{
+				h1{font-size: 40px;}
+				h2{font-size: 30px;}
+			}	
+}
+
+@mixin flex-end{
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-end;
+}
+@mixin overflow-x {
+	overflow-x: hidden;
+}
+@mixin flex-column{
+	display: flex;
+	flex-direction:column;
+}

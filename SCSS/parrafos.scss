@@ -1,0 +1,10 @@
+.parrSass{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darksalmon;
+    font-style: bold;
+}
+
+.parrSassExt{
+    @extend .parrSass;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
